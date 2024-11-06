@@ -237,7 +237,7 @@ func W(n float64, v uint64) (w int64) {
 
 		for i := end; i >= 0; i-- {
 			if s[i] != '0' {
-				end = i + 1
+				end = i - 1
 				break
 			}
 		}
@@ -279,7 +279,7 @@ func T(n float64, v uint64) (t int64) {
 
 		for i := end; i >= 0; i-- {
 			if s[i] != '0' {
-				end = i + 1
+				end = i - 1
 				break
 			}
 		}
